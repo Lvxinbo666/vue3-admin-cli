@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios'
 import { ElMessage, ElMessageBox } from 'element-plus'
 
-import router, { resetRoute } from '@/router'
+import router, { resetRoute } from '@/router/index'
 
 function getSession(key: string) {
   const json: any = window.sessionStorage.getItem(key)
