@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios'
 import { ElMessage, ElMessageBox } from 'element-plus'
 
-import router, { resetRoute } from '@/router/index'
+import router, { resetRoute } from '@/router'
 
 export const PATH_URL: string = '' || import.meta.env.VITE_API_URL
 
