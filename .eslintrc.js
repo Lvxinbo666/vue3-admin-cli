@@ -9,6 +9,7 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 12,
   },
+  extends: ['plugin:vue/vue3-recommended'],
   rules: {
     semi: ['error', 'never'],
     quotes: ['error', 'single'],
