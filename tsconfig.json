@@ -14,7 +14,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "suppressImplicitAnyIndexErrors": true,
-    "types": ["webpack-env"],
+    "types": ["types"],
     "paths": {
       "@/*": ["src/*"]
     },
