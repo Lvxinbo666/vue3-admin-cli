@@ -1,0 +1,15 @@
+root = true
+# 说明
+# 设置文件编码为 UTF-8
+# 用两个空格代替制表符
+# 控制缩进大小
+# 在保存时删除尾部的空白字符
+# 在文件末尾添加一个空白行
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
