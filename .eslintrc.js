@@ -9,7 +9,7 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 12,
   },
-  extends: ['plugin:vue/vue3-recommended'],
+  extends: ['plugin:vue/vue3-recommended', 'airbnb-base'],
   rules: {
     semi: ['error', 'never'],
     quotes: ['error', 'single'],
