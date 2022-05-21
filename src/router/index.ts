@@ -1,24 +1,24 @@
-import { createRouter, createWebHistory } from "vue-router";
-import type { App } from "vue";
+import { createRouter, createWebHistory } from 'vue-router'
+import type { App } from 'vue'
 
-const routerHistory = createWebHistory();
+const routerHistory = createWebHistory()
 
 const router = createRouter({
   history: routerHistory,
-  routes: [],
-});
+  routes: []
+})
 
 // 删除/重置路由
 export function resetRoute(): void {
   router.getRoutes().forEach((route) => {
-    const { name } = route;
+    const { name } = route
     if (name) {
-      router.hasRoute(name) && router.removeRoute(name);
+      router.hasRoute(name) && router.removeRoute(name)
     }
-  });
+  })
 }
 
 export function setupRouter(app: App<Element>) {
-  app.use(router);
+  app.use(router)
 }
-export default router;
+export default router

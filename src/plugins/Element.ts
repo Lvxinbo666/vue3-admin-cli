@@ -1,5 +1,5 @@
 // 按需加载element
-import type { App } from "vue";
+import type { App } from 'vue'
 
 import {
   ElAlert,
@@ -83,8 +83,8 @@ import {
   ElLoading,
   ElMessage,
   ElMessageBox,
-  ElNotification,
-} from "element-plus";
+  ElNotification
+} from 'element-plus'
 
 const components = [
   ElAlert,
@@ -163,26 +163,20 @@ const components = [
   ElTooltip,
   ElTransfer,
   ElTree,
-  ElUpload,
-];
+  ElUpload
+]
 
-const plugins = [
-  ElInfiniteScroll,
-  ElLoading,
-  ElMessage,
-  ElMessageBox,
-  ElNotification,
-];
+const plugins = [ElInfiniteScroll, ElLoading, ElMessage, ElMessageBox, ElNotification]
 
 export function setupElement(app: App<Element>): void {
   components.forEach((component: any) => {
-    app.component(component.name, component);
-  });
+    app.component(component.name, component)
+  })
 
   plugins.forEach((plugin: any) => {
-    app.use(plugin);
-  });
+    app.use(plugin)
+  })
 
   // 全局配置
-  app.config.globalProperties.$ELEMENT = { size: "small", zIndex: 3000 };
+  app.config.globalProperties.$ELEMENT = { size: 'small', zIndex: 3000 }
 }
