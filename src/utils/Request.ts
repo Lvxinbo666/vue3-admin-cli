@@ -3,26 +3,20 @@ import { ElMessage, ElMessageBox } from 'element-plus'
 
 import router, { resetRoute } from '@/router/index'
 
-function getSession(key: string) {
-  const json: any = window.sessionStorage.getItem(key)
-  return JSON.parse(json)
-}
-
 export const PATH_URL: string = '' || import.meta.env.VITE_API_URL
 
 // 配置新建一个 axios 实例
 const service: AxiosInstance = axios.create({
   baseURL: PATH_URL,
   timeout: 50000,
-  headers: { 'Content-Type': 'application/json' }
+  headers: {
+    'Content-Type': 'application/json'
+  }
 })
 
 // 添加请求拦截器
 service.interceptors.request.use(
   (config: AxiosRequestConfig) => {
-    if (getSession('token')) {
-      config.headers.common.Authorization = `${getSession('token')}`
-    }
     return config
   },
   (error: AxiosError) => {
