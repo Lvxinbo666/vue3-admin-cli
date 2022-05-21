@@ -6,11 +6,11 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    sourceType: "module",
+    sourceType: 'module',
     ecmaVersion: 12,
   },
   rules: {
-    semi: ["error", "never"],
-    quotes: ["error", "single"],
+    semi: ['error', 'never'],
+    quotes: ['error', 'single'],
   },
-};
+}
