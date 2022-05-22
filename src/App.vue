@@ -1,3 +1,3 @@
-<template></template>
-
-<style></style>
+<template>
+  <router-view></router-view>
+</template>
