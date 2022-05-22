@@ -8,7 +8,6 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
 import layoutHeader from './Header.vue'
 export default defineComponent({
   components: {
