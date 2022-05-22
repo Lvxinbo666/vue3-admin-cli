@@ -6,6 +6,7 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ElAside: typeof import('element-plus/es/el-aside')['default']
+    ElButton: typeof import('element-plus/es/el-button')['default']
     ElContainer: typeof import('element-plus/es/el-container')['default']
     ElHeader: typeof import('element-plus/es/el-header')['default']
     ElMain: typeof import('element-plus/es/el-main')['default']
