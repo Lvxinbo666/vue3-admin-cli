@@ -1,1 +1,3 @@
-<template>this. is home</template>
+<template>
+  <div class="container">this. is home</div>
+</template>

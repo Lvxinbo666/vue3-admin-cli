@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router, { setupRouter } from './router' // 路由
 import { setupElement } from './plugins/Element'
-
+import '@/styles/Tailwind.css'
 const app = createApp(App)
 setupElement(app)
 setupRouter(app) // 引入路由
