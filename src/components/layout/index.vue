@@ -1,11 +1,10 @@
 <template>
   <div class="h-full w-full">
     <layout-header></layout-header>
-    <el-container>
+    <el-container class="height-calc-60">
       <el-aside width="200px">Aside</el-aside>
       <el-main>Main</el-main>
     </el-container>
-    <el-footer></el-footer>
   </div>
 </template>
 <script lang="ts">
