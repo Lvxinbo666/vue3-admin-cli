@@ -1,10 +1,19 @@
 <template>
-  <el-container class="layout h-full w-full">
-    <el-aside> </el-aside>
+  <div class="h-full w-full">
+    <Header></Header>
     <el-container>
-      <el-main class="pr-10 pl-10 pb-10 pt-0">
-        <router-view />
-      </el-main>
+      <el-aside width="200px">Aside</el-aside>
+      <el-main>Main</el-main>
     </el-container>
-  </el-container>
+    <el-footer></el-footer>
+  </div>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+import Header from './Header.vue'
+export default defineComponent({
+  components: {
+    Header
+  }
+})
+</script>
