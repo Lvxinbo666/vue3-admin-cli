@@ -1,9 +1,24 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { App } from 'vue'
-
+import layout from '@/components/layout/index.vue'
 const router = createRouter({
   history: createWebHashHistory(),
-  routes: []
+  routes: [
+    {
+      path: '/',
+      component: layout,
+      name: 'layout',
+      children: [
+        {
+          path: 'homePage',
+          component: () => import('@/views/homePage/index.vue'),
+          meta: {
+            title: '首页'
+          }
+        }
+      ]
+    }
+  ]
 })
 
 // 删除/重置路由
